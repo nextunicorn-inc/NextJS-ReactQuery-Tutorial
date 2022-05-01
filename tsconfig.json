@@ -16,12 +16,17 @@
     "paths": {
       "infinite-scroll": ["./apps/01-infinite-scroll"],
       "infinite-scroll/*": ["./apps/01-infinite-scroll/*"],
+      "follow-sync": ["./apps/02-follow-sync"],
+      "follow-sync/*": ["./apps/02-follow-sync/*"]
     }
   },
   "references": [
     {
       "path": "apps/01-infinite-scroll"
     },
+    {
+      "path": "apps/02-follow-sync"
+    }
   ],
   "include": [],
   "exclude": [

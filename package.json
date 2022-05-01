@@ -1,0 +1,52 @@
+{
+  "name": "@nextjs-tutorial/workspace",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.2.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "author": "InSeong-So",
+  "engines": {
+    "node": "^14.15.0 || >=16.10.0",
+    "yarn": ">=1.22.4 <2",
+    "npm": "Please use yarn instead of NPM to install dependencies"
+  },
+  "scripts": {
+    "backend": "yarn workspace @nextjs-tutorial/backend",
+    "infinite": "yarn workspace @nextjs-tutorial/01-infinite-scroll"
+  },
+  "dependencies": {
+    "@babel/generator": "^7.17.9",
+    "@babel/runtime": "^7.17.9",
+    "@babel/types": "^7.17.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "@emotion/eslint-plugin": "^11.7.0",
+    "@next/eslint-plugin-next": "^12.1.5",
+    "@types/node": "^17.0.29",
+    "@types/react": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "^12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-next": "^0.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-testing-library": "^5.3.1",
+    "prettier": "^2.6.2",
+    "prettier-eslint": "^14.0.2",
+    "react": "^18.1.0",
+    "typescript": "^4.6.3"
+  }
+}

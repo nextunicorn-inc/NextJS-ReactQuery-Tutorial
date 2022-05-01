@@ -80,6 +80,16 @@ module.exports = {
         },
       },
     },
+    {
+      files: ['apps/02-follow-sync/**/*.ts?(x)', 'apps/02-follow-sync/**/*.js?(x)'],
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(`${__dirname}/apps/02-follow-sync/tsconfig.json`),
+          },
+        },
+      },
+    },
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],

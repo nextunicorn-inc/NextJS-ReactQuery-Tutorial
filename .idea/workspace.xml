@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="" />
+    <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@types-faker-npm-6.6.9-396b021bf1-8fb069b6f2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/big-integer-npm-1.6.51-1a244d8e1f-3d444173d1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/broadcast-channel-npm-3.7.0-81ceba70bb-803794c48d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/data-uri-to-buffer-npm-4.0.0-e7a49f58f7-a010653869.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/detect-node-npm-2.1.0-e8de0e94f7-832184ec45.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/faker-npm-6.6.6-555f97fca7-bfb0d581ab.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/fetch-blob-npm-3.1.5-82671261d9-6493f21bfe.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/formdata-polyfill-npm-4.0.10-e03013c013-82a34df292.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/js-sha3-npm-0.8.0-decf3ddcfa-75df77c1fc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/match-sorter-npm-6.3.1-ff3565ebb9-a4b02b676a.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/microseconds-npm-0.2.0-dbdb8ab8bb-22bfa8553f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/nano-time-npm-1.0.0-6eca938be8-eef8548546.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/node-domexception-npm-1.0.0-e1e813b76f-ee1d37dd2a.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/node-fetch-npm-3.2.4-288de8d356-cfc7154413.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/oblivious-set-npm-1.0.0-8e7336b241-f31740ea9c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-loading-npm-2.0.3-58f442fba0-a2b24b94c1.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-query-npm-3.38.0-396d538e0a-9318952a3e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/remove-accents-npm-0.4.2-7cb341092a-84a6988555.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/unload-npm-2.2.0-c40df6b4d0-88ba950c5f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/web-streams-polyfill-npm-3.2.1-835bd3857e-b119c78574.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +75,8 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apps/02-follow-sync/components/Card" />
+      <recent name="$PROJECT_DIR$/apps/02-follow-sync/styles" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header" />
@@ -62,7 +92,8 @@
       <updated>1651384149048</updated>
       <workItem from="1651384150284" duration="3822000" />
       <workItem from="1651388508757" duration="4893000" />
-      <workItem from="1651395363141" duration="4901000" />
+      <workItem from="1651395363141" duration="5557000" />
+      <workItem from="1651406488110" duration="11169000" />
     </task>
     <servers />
   </component>

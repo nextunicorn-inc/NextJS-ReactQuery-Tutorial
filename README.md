@@ -181,7 +181,7 @@
 
   Data.getInitialProps = ({ query }) => {
     return {
-      data: SomethingDataList[query.id];
+      data: SomethingDataList[query.id]
     }
   };
   ```
@@ -293,7 +293,7 @@
   - 이 라우터를 통해 Node.js 코드를 작성할 수 있습니다. 이는 프론트엔드와 백엔드의 매끄러운 전환이 가능하므로 패러다임을 전환할 수 있습니다.
 
 - `/pages/api/comments.js` 파일이 있고, 이 파일은 블로그 게시물의 댓글들을 JSON 형태로 반환한다고 가정해볼까요?
-  ```json
+  ```js
   // /pages/api/comments.json
   [
     {

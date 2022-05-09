@@ -9,7 +9,7 @@ type MainProps = {
 
 export const Main = ({ pokemons }: MainProps) => (
   <Styled.MainLayout>
-    {pokemons.map(pokemon => (
+    {pokemons?.map?.(pokemon => (
       <Styled.CardContainer>
         <PokemonCard
           id={pokemon.id}

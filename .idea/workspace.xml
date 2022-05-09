@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="28YCUauTBwdZfPQK5lzvMQ87vs4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -25,26 +36,9 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.33",
-    "last_opened_file_path": "/Users/tene/Development/NextJS-Tutorial/apps/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "yarn:package.json:prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "yarn:apps/02-follow-sync/package.json:typescript",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/backend" />
@@ -57,6 +51,30 @@
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.debug">
+    <configuration name="debug" type="JavascriptDebugType" uri="http://localhost:3000" useFirstLineBreakpoints="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="infinite" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="yarn workspace @nextjs-tutorial/01-infinite-scroll dev" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="yarn workspace @nextjs-tutorial/01-infinite-scroll dev" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.debug" />
+      <item itemvalue="Shell Script.infinite" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

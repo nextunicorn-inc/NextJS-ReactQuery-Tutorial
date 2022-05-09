@@ -1,41 +1,46 @@
 // eslint-disable-next-line import/no-unresolved
-import { PokemonApi, Pokemon } from 'pokemon';
-import React, { useCallback, useEffect, useState } from 'react';
+import {Pokemon, PokemonApi} from 'pokemon';
+import React, {useState} from 'react';
 import api from '../config';
-import { Header, Main, Footer } from '../components';
+import {Footer, Header, Main} from '../components';
+import {useQuery} from 'react-query';
+import {queryClient} from "./_app";
+
+const fetchPokemons = async (limit): Promise<Pokemon[]> => {
+    try {
+        const response = await api.get<PokemonApi>(`/pokemon?limit=${limit}`);
+        const {results} = response.data;
+        return Promise.all<Pokemon>(
+            results.map(({url}) =>
+                fetch(url).then(pokemonDataResponse => pokemonDataResponse.json()),
+            ),
+        );
+    } catch (error) {
+        console.log('에러가 발생했어요...');
+        console.error(error as Error);
+    }
+};
 
 const Home = () => {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
-  const [limit, setLimit] = useState<number>(40);
+    const [limit, setLimit] = useState<number>(40);
+    const pokemons = useQuery(['pokemons'], () => fetchPokemons(limit), {
+        onSuccess: (data) => {
+            data?.map?.((pokemon) => {
+                const cached = queryClient.getQueryData(['pokemon', pokemon.id]);
+                if (!cached) {
+                    queryClient.setQueryData(['pokemon', pokemon.id], pokemon);
+                }
+            })
+        },
+    });
 
-  const fetchPokemons = useCallback(async (): Promise<void> => {
-    try {
-      const response = await api.get<PokemonApi>(`/pokemon?limit=${limit}`);
-      const { results } = response.data;
-      const responseList = Promise.all<Pokemon>(
-        results.map(({ url }) =>
-          fetch(url).then(pokemonDataResponse => pokemonDataResponse.json()),
-        ),
-      );
-      const detailDataList = await responseList;
-      setPokemons(detailDataList);
-    } catch (error) {
-      console.log('에러가 발생했어요...');
-      console.error(error as Error);
-    }
-  }, [limit]);
-
-  useEffect(() => {
-    fetchPokemons();
-  }, [fetchPokemons]);
-
-  return (
-    <div>
-      <Header />
-      <Main pokemons={pokemons} />
-      <Footer callback={() => setLimit(limit + 8)} />
-    </div>
-  );
+    return (
+        <div>
+            <Header/>
+            <Main pokemons={pokemons.data}/>
+            <Footer callback={() => setLimit(limit + 8)}/>
+        </div>
+    );
 };
 
 export default Home;

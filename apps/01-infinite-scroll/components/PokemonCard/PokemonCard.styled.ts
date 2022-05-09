@@ -8,6 +8,7 @@ export const PokemonCardContainer = styled.div`
   width: 260px;
   height: 350px;
   margin-bottom: 30px;
+  position: relative;
 
   .rc-slider-handle {
     display: none;
@@ -127,4 +128,18 @@ export const Box = styled.div`
       height: 0;
     }
   }
+`;
+
+export const LikeButton = styled.button`
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: ${({ liked }) => liked ? 'pink' : 'white'};
 `;

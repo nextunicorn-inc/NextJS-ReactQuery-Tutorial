@@ -3,6 +3,7 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import { useCallback } from 'react';
 import { useRouter } from 'next/router';
+import {useQuery} from 'react-query';
 import {queryClient} from '../../pages/_app';
 
 type PokemonCardProps = {
@@ -13,7 +14,7 @@ export const PokemonCard = ({
   id,
 }: PokemonCardProps) => {
   const router = useRouter();
-  const pokemon = queryClient.getQueryData(['pokemon', id]);
+  const pokemon = useQuery(['pokemon', id])?.data;
 
   const {
     name,
@@ -49,7 +50,7 @@ export const PokemonCard = ({
   }, [id]);
 
   const onClickLike = (e) => {
-    e.preventDefault();
+    e.stopPropagation();
     queryClient.setQueryData(['pokemon', id], {
       ...pokemon,
       liked: !pokemon.liked,

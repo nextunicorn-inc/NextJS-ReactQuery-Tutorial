@@ -6,6 +6,7 @@ function Id() {
 
     return (
         <PokemonCard
+            key={query.id}
             id={parseInt(query.id, 10)}
         />
     );

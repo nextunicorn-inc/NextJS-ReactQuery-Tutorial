@@ -7,6 +7,11 @@ import {useQuery} from 'react-query';
 import {queryClient} from "./_app";
 
 const fetchPokemons = async (limit): Promise<Pokemon[]> => {
+    const cached = queryClient.getQueryData(['pokemons']);
+    if (cached?.length >= limit) {
+        return Promise.resolve(cached as Pokemon[]);
+    }
+
     try {
         const response = await api.get<PokemonApi>(`/pokemon?limit=${limit}`);
         const {results} = response.data;
@@ -22,7 +27,7 @@ const fetchPokemons = async (limit): Promise<Pokemon[]> => {
 };
 
 const Home = () => {
-    const [limit, setLimit] = useState<number>(40);
+    const [limit, setLimit] = useState<number>(8);
     const pokemons = useQuery(['pokemons'], () => fetchPokemons(limit), {
         onSuccess: (data) => {
             data?.map?.((pokemon) => {

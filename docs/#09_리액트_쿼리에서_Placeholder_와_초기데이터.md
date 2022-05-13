@@ -8,7 +8,7 @@ React Query는 이미 많은 상황에서 이를 해결하는 도구를 제공�
 
 차이점과 어떤 게 더 좋은 상황이 있는지 확인하기 전에 둘의 공통점부터 시작해봅시다.
 
-## ****Similarities****
+## **Similarities**
 
 이미 암시했듯, 두 가지 모두 사용할 수 있는 데이터를 캐시에 동기적으로 미리 채울 수 있는 방법을 제공합니다. 또한 이 중 하나가 제공되면 쿼리가 로딩 상태가 아니라 바로 성공 상태로 전환됩니다. 또한 값을 반환하는 함수 또는 값 자체를 반환할 수 있는데, 이는 값을 계산하는 데 비용이 많이 드는 경우를 위함입니다.
 
@@ -28,13 +28,13 @@ function Component() {
 
 마지막으로, 캐시에 데이터가 이미 있는 경우 둘 다 영향을 미치지 않습니다. 그럼 둘 중 하나를 사용한다고 해서 뭐가 달라질까요? 이를 이해하려면 React Query의 옵션이 어떻게 작동하는지(어떤 레벨에서 동작하는지) 간략하게 살펴봐야 합니다.
 
-## ****On cache level****
+## **On cache level**
 
 각 쿼리 키에는 캐시 항목이 하나만 있습니다. 이는 React Query가 애플리에서 동일한 데이터를 "전역적으로" 공유할 수 있기 때문입니다.
 
 중요한 예로는 *useQuery가* 제공하는 일부 옵션이 해당 캐시 항목의 *staleTime과 cacheTime*에 영향을 미친다는 겁니다.  캐시 항목은 하나뿐이므로 이러한 옵션은 해당 항목이 오래된 것으로 간주하거나 garbage collected 될 수 있는 시기를 지정할 수 있습니다.
 
-## ****On observer level****
+## **On observer level**
 
 React Query의 observer는 넓게 말하자면 하나의 캐시 엔트리를 위해 생성된 subscription입니다. observer는 캐시 항목이 변경되었는지 확인하고 변경 사항이 있을 때마다 알림을 받습니다.
 
@@ -46,17 +46,17 @@ observer를 만드는 기본적인 방법은 *useQuery*를 호출하는 것입�
 
 일부 옵션은 observer level에서 동작하며 기존 데이터를 유지할지 선택해야 합니다. 사실, 선택할 수 있다는 것은 동일한 캐시 엔트리를 감시하면서도 다른 컴포넌트의 일부 데이터를 subscribe 하여 [데이터를 변환](https://tkdodo.eu/blog/react-query-data-transformations#3-using-the-select-option)할 수 있기 때문에 매우 유용합니다.
 
-## ****Differences****
+## **Differences**
 
 *InitialData*는 캐시 수준에서 동작하며 *placeholderData는* observer level에서 동작합니다. 여기에는 몇 가지 의미가 있죠.
 
-### ****Persistence****
+### **Persistence**
 
 우선, initialData는 캐시에 유지됩니다. 이것은 React Query를 알려주는 한 가지 방법인데, 이미 백엔드에서 가져온 것과 같이 "좋은" 데이터가 있다면 캐시 레벨에서 작동하므로 초기 데이터는 하나만 있을 수 있고, 해당 데이터는 캐시 항목이 생성되는 즉시 캐시에 저장됩니다(첫 번째 observer가 마운트될 때). 초기 데이터가 다른 두 번째 observer를 마운트하려고 해도 아무 것도 하지 않아요.
 
 반면 *placeholderData*는 캐시에 유지되지 않습니다. 저는 이걸 "진짜 생성하기 전까지의 더미" 데이터로 여깁니다. 즉, 가짜 데이터죠. React Query는 실제 데이터를 가져오는 동안 이를 표시할 수 있게 제공합니다. observer level에서 동작하기 때문에 이론적으로 여러 컴포넌트에 대해 다른 *placeholderData*를 가질 수도 있습니다.
 
-### ****Background refetches****
+### **Background refetches**
 
 *placeholderData*를 사용하면 observer를 처음 마운트할 때 항상 background-refetch를 합니다. 데이터가 "실제가 아니"므로 React Query가 실제 데이터를 가져오죠. 이 경우 *useQuery*에서 *isPlaceholderData* 플래그가 반환됩니다. 이 플래그를 사용하여 사용자가 보고 있는 데이터가 실제로는 *placeholderData*임을 시각적으로 암시할 수 있습니다. 물론 실제 데이터가 들어오는 즉시 다시 false로 전환될 겁니다.
 
@@ -88,13 +88,13 @@ const useTodo = (id) => {
 }
 ```
 
-### ****Error transitions****
+### **Error transitions**
 
 *initialData* 또는 *placeholderData*를 제공하여 background-refetch가 트리거되었지만 이 작업은 실패한다고 가정해봅시다. 각각의 상황에서 어떤 일이 일어날 것이라고 생각하나요? 제가 생각했던 답은 아래와 같아요.
 
 - InitialData : *initialData*는 캐시에 유지되기 때문에 refetch 오류는 다른 백그라운드 오류와 동일하게 처리됩니다. 쿼리는 *error* 상태가 되지만 데이터는 그대로 있습니다.
 - PlaceholderData : *placeholderData*는 "진짜 생성하기 전까지의 더미" 데이터이므로, 우리는 이 데이터를 더 이상 볼 수 없습니다. 쿼리는 *error* 상태가 되고 데이터가 정의되지 않죠.
 
-## ****When to use what****
+## **When to use what**
 
 항상 그렇듯이, 결정권은 전적으로 당신에게 달려 있습니다. 저는 개인적으로 다른 쿼리로부터 쿼리를 미리 채울 때 *initialData*를 사용하는 것을 선호하며, 그 외는 *placeholderData*를 사용하고 있어요.

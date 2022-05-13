@@ -4,7 +4,7 @@
 
 이 use-case에 대해 React Query는 *useMutation* hook을 제공합니다.
 
-## ****What are mutations?****
+## **What are mutations?**
 
 일반적으로, mutation은 부가 효과(side effect)를 함수입니다. 예를 들어, 배열에 값을 넣는 push 메서드를 살펴보세요. 값을 넣을 때 배열이 변경되는 부가 효과가 있습니다.
 
@@ -29,14 +29,14 @@ console.log(newArray) // [1, 2]
 
 어떤 측면에서는 *useQuery를* 위해 *useMutation*을 사용합니다. 이 경우 위의 상황과 꽤 다르죠.
 
-## ****Similarities to useQuery****
+## **Similarities to useQuery**
 
 *useMutation*은 *useQuery*가 쿼리에 대해 수행하는 것처럼 mutation의 상태를 추적합니다. *loading*, *error*
  and *status* fields를 제공하여 사용자에게 무슨 일이 일어나고 있는지 쉽게 표시할 수 있습니다.
 
 또한 *useQuery* 콜백과 마찬가지로 *onSuccess*, *onError* 및 *onSettled*를 사용할 수 있습니다. 비슷한 점은 이게 끝이에요.
 
-## ****Differences to useQuery****
+## **Differences to useQuery**
 
 > *useQuery* is declarative, *useMutation* is imperative.
 > 
@@ -69,13 +69,13 @@ function AddComment({ id }) {
 
 또 다른 차이점은 mutations가 *useQuery*처럼 상태를 공유하지 않는다는 것입니다. 다른 컴포넌트에서 동일한 *useQuery*를 **여러 번 호출할 수 있으며 캐시된 결과를 동일하게 반환하지만 mutations은 동작하지 않습니다.
 
-## ****Tying mutations to queries****
+## **Tying mutations to queries**
 
 mutations는 대부분 쿼리에 직접 연결되지 않게 설계합니다. 게시물의 “좋아요” mutation은 게시물을 “fetch”하는 쿼리와는 관련이 없죠. 이렇게 하려면 React Query에 없는 일종의 기본 스키마가 필요합니다.
 
 mutation이 쿼리에 대한 변경 사항을 반영하기 위해 React Query는 주로 다음 두 가지 방법을 제공합니다.
 
-### ****Invalidation****
+### **Invalidation**
 
 이것은 화면을 최신 상태로 만드는 가장 간단한 개념적 방법입니다. 서버 상태에서는 특정 시점의 데이터 스냅샷만 표시합니다. React Query는 이러한 정보를 항상 최신 상태로 유지하려고 하지만, 의도적으로 서버 상태를 변경하려는 경우, 이것은 React Query에게 캐시된 일부 데이터가 "잘못된" 상태임을 알려주는 좋은 시점이죠. React Query가 현재 사용 중인 경우 해당 데이터를 다시 가져오고, 가져오기가 완료되면 화면이 자동으로 업데이트됩니다. 무효화할 쿼리만 라이브러리에 알려주면 됩니다.
 
@@ -106,7 +106,7 @@ const useAddComment = (id) => {
 
 이 중 하나만 화면에 표시되므로 무효화된 쿼리는 해당 쿼리를 다시 검색하고 다른 하나는 오래된 것으로 표시합니다.
 
-## ****Direct updates****
+## **Direct updates**
 
 특히 mutation가 이미 알아야 할 모든 정보를 반환하는 경우 데이터를 다시 검색하지 않으려는 경우가 있습니다. 게시글의 제목을 업데이트하는 mutation이 있고 백엔드가 전체 게시글을 응답하는 경우 *setQueryData*를 통해 직접 쿼리 캐시를 업데이트할 수 있습니다.
 
@@ -135,7 +135,7 @@ const useUpdateTitle = (id) => {
 
 저는 개인적으로 대부분 무효가 선호되어야 한다고 생각합니다. 물론 상황에 따라 다르지만 직접 업데이트가 안정적으로 작동하려면 프론트엔드에 더 많은 코드가 필요하며 백엔드의 중복 로직이 어느 정도 필요합니다. 예를 들어, 직접 업데이트 시 정렬된 목록은 내부 항목의 위치가 변경될 수 있기 때문에 매우 어렵습니다. 전체 목록을 무효화하는 것이 "안전한" 접근법이에요.
 
-## ****Optimistic updates****
+## **Optimistic updates**
 
 낙관적인 업데이트는 React Query mutations를 사용하기 위한 전략 중 하나입니다. *useQuery* 캐시는 쿼리 간 전환 시, 특히 [prefetching](https://react-query.tanstack.com/guides/prefetching)과 결합할 때 데이터를 즉시 제공합니다. 이것 때문에 전체적인 UI가 매우 빠르게 느껴집니다. 그렇다면 mutations도 같은 이점을 얻을 수 있지 않을까요?
 
@@ -143,7 +143,7 @@ const useUpdateTitle = (id) => {
 
 실제로, 즉각적인 사용자 피드백이 필요한 소규모의 mutations에 매우 효과적입니다. 요청을 수행하는 토글 버튼보다 더 나쁜 것이 없는 이유가, 요청이 완료될 때까지 전혀 반응하지 않으니까요. 사용자들은 그 버튼을 두 번 또는 세 번 클릭할 것이고, 모든 곳에서 "laggy"를 느끼겠죠.
 
-## ****Example****
+## **Example**
 
 저는 추가적인 예를 보여주지 않기로 했습니다. [공식 문서](https://react-query.tanstack.com/guides/optimistic-updates)는 이 주제를 잘 다루고 있으며, [JavaScript](https://react-query.tanstack.com/examples/optimistic-updates)와 [TypeScript](https://react-query.tanstack.com/examples/optimistic-updates-typescript)의 예제도 있습니다.
 
@@ -157,11 +157,11 @@ const useUpdateTitle = (id) => {
 
 이러한 모든 edge 케이스는 UX를 실제로 더 나쁘게 만들 수 있는데, 어떤 상황에서는 mutation이 수행되는 동안 버튼을 비활성화시키고 로딩 애니메이션을 보여주기는 것으로 충분할 수 있습니다. 항상 그렇듯이, 올바른 작업에 적합한 도구를 선택해주세요.
 
-## ****Common Gotchas****
+## **Common Gotchas**
 
 마지막으로, 처음에는 확실하지 않을 수 있는 mutations를 다룰 때 좋은 몇 가지 사항에 대해 자세히 알아볼게요.
 
-### ****awaited Promises****
+### **awaited Promises**
 
 mutation 콜백에서 반환된 Promise는 React Query에 의해 대기(awaited)되며, 실제로 *invalidateQueries*는 Promise를 반환합니다. 관련 쿼리가 업데이트되는 동안 변환을 *loading* 상태로 유지하려면 콜백에서 *invalidateQueries* 결과를 반환해야 합니다.
 
@@ -180,7 +180,7 @@ mutation 콜백에서 반환된 Promise는 React Query에 의해 대기(awaited)
 }
 ```
 
-### ****Mutate or MutateAsync****
+### **Mutate or MutateAsync**
 
 *useMutation*은 *mutate* 및 *mutateAsync* 두 가지 함수를 제공합니다. 차이점은 무엇이고, 언제 어떤 걸 사용해야 할까요?
 
@@ -217,7 +217,7 @@ React Query는 내부적으로 오류를 캐치하거나 무시하므로 *mutate
 
 *mutateAsync*가 더 뛰어날 유일한 상황은 여러분이 정말로 Promise가 필요하여 Promise를 지켜야 할 때입니다. 이것은 여러 mutations를 동시에 시작하고 모든 mutations이 끝나기를 기다리거나, 콜백 지옥에 빠질 수 있는 의존적 mutations이 있는 경우에 필요할 수 있습니다.
 
-### ****Mutations only take one argument for variables****
+### **Mutations only take one argument for variables**
 
 변환하는 마지막 인수가 옵션 객체이므로 *useMutation*은 현재 변수에 대해 하나의 인수만 사용할 수 있습니다. 확실히 이건 제한적이지만, 객체를 사용하여 쉽게 해결할 수 있습니다.
 
@@ -233,7 +233,7 @@ mutation.mutate({ title: 'hello', body: 'world' })
 
 현재 필요한 이유에 대해 자세히 알아보려면 [이 토론](https://github.com/tannerlinsley/react-query/discussions/1226)을 참조하십시오.
 
-### ****Some callbacks might not fire****
+### **Some callbacks might not fire**
 
 *useMutation*에 대한 콜백뿐만 아니라 *mutate*에 대한 콜백을 가질 수 있습니다. *mutate*의 콜백 전에 u*seMutation* 이 호출되는 것을 알아야 합니다. 또한 변환이 완료되기 전에 컴포넌트가 마운트 해제된 경우 *mutate* 콜백이 전혀 실행되지 않을 수 있습니다.
 

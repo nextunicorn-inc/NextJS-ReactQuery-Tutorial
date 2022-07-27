@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="28YCUauTBwdZfPQK5lzvMQ87vs4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -25,37 +27,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.33",
-    "last_opened_file_path": "/Users/tene/Development/NextJS-Tutorial/apps/backend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "yarn:package.json:prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "yarn:apps/02-follow-sync/package.json:typescript",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.45&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tene/Development/NextJS-Tutorial/apps/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;yarn:package.json:prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;yarn:apps/02-follow-sync/package.json:typescript&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/apps/backend" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/React" />
       <recent name="$PROJECT_DIR$/apps/02-follow-sync/components/Card" />
       <recent name="$PROJECT_DIR$/apps/02-follow-sync/styles" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll" />
       <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components" />
-      <recent name="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,6 +73,8 @@
       <workItem from="1651395363141" duration="5557000" />
       <workItem from="1651406488110" duration="11296000" />
       <workItem from="1651454252858" duration="4114000" />
+      <workItem from="1658827385536" duration="1159000" />
+      <workItem from="1658887346265" duration="23347000" />
     </task>
     <servers />
   </component>

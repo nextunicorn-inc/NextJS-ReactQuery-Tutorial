@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/React/05.Event.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/React/06.Conditional Rendering.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/React/05.Conditional Rendering.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/React/07.Rendering Lists.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/React/06.Rendering Lists.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/React/08.Keeping Components Pure.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/React/07.Keeping Components Pure.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,8 @@
       <workItem from="1658827385536" duration="1159000" />
       <workItem from="1658887346265" duration="23547000" />
       <workItem from="1658970924392" duration="23700000" />
-      <workItem from="1659056919708" duration="16944000" />
+      <workItem from="1659056919708" duration="17040000" />
+      <workItem from="1659172261420" duration="3762000" />
     </task>
     <servers />
   </component>

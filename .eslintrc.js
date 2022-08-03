@@ -7,7 +7,6 @@ module.exports = {
     browser: true,
   },
   extends: [
-    'airbnb',
     'prettier',
     'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -28,19 +27,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-useless-fragment': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'] }],
     'react/function-component-definition': 'off',
-    'jsx-a11y/label-has-associated-control': ['error', { controlComponents: ['input', 'select'] }],
-    // import options
-    'sort-imports': 'off',
-    'import/prefer-default-export': 'off',
-    'import/order': 'off',
-    'import/no-duplicates': 'off',
-    'import/no-default-export': 'off',
-    'import/no-named-as-default': 'off',
     'no-restricted-exports': 'off',
-    'import/no-extraneous-dependencies': 'off',
-    'import/extensions': 'off',
     //
     'max-params': ['error', 3],
   },

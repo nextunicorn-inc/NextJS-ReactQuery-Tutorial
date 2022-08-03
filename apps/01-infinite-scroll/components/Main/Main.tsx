@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { Pokemon } from 'pokemon';
 import * as Styled from './Main.styled';
 import { PokemonCard } from '../PokemonCard/PokemonCard';

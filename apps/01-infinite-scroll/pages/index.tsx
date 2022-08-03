@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { PokemonApi, Pokemon } from 'pokemon';
 import React, { useCallback, useEffect, useState } from 'react';
 import api from '../config';

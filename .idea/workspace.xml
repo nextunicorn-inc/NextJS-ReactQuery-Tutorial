@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pnp.loader.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.loader.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/confusing-browser-globals-npm-1.0.11-b3ff8e9483-3afc635abd.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/eslint-config-airbnb-base-npm-15.0.0-802837dd26-38626bad2c.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/eslint-config-airbnb-npm-19.0.4-a73150c84a-253178689c.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/typescript-patch-044c37f428-1cb434fbc6.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/typescript-patch-ae154b3216-96d3030cb0.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/releases/yarn-3.2.0.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarnrc.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/@types/pokemon.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/@types/pokemon.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/api/items.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +89,11 @@
       <workItem from="1659513757711" duration="125000" />
       <workItem from="1659513892498" duration="496000" />
       <workItem from="1659514405752" duration="336000" />
-      <workItem from="1659514750816" duration="187000" />
+      <workItem from="1659514750816" duration="1703000" />
+      <workItem from="1659517669038" duration="5417000" />
+      <workItem from="1659530406461" duration="4753000" />
+      <workItem from="1659588198996" duration="919000" />
+      <workItem from="1659589132412" duration="1205000" />
     </task>
     <servers />
   </component>

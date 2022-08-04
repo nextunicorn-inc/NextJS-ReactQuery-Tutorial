@@ -1086,6 +1086,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:11.10.0"],\
             ["@types/eslint", "npm:8.4.1"],\
             ["@types/node", "npm:18.6.3"],\
+            ["@types/prettier", "npm:2.6.4"],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["axios", "npm:0.27.2"],\
@@ -1095,6 +1096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["graphql-request", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:4.3.0"],\
             ["msw", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:0.44.2"],\
             ["next", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:12.2.3"],\
+            ["prettier", "npm:2.7.1"],\
             ["rc-slider", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:10.0.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:18.2.0"],\

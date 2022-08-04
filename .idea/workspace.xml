@@ -5,10 +5,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/@types/pokemon.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/@types/pokemon.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/.env" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/browser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/browser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/handlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/handlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/mocks/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/queries/pokemons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/queries/pokemons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/queries/pokemons.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/queries/pokemons.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +100,7 @@
       <workItem from="1659517669038" duration="5417000" />
       <workItem from="1659530406461" duration="4753000" />
       <workItem from="1659588198996" duration="919000" />
-      <workItem from="1659589132412" duration="1205000" />
+      <workItem from="1659589132412" duration="6161000" />
     </task>
     <servers />
   </component>

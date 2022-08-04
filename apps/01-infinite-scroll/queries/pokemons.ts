@@ -4,7 +4,7 @@ export const POKEMONS = gql`
     pokemons: pokemon_v2_pokemonspecies(offset: $offset, limit: 20, order_by: { id: asc }) {
       name
       id
-      habitAt: pokemon_v2_pokemonhabitat {
+      habitAts: pokemon_v2_pokemonhabitat {
         name
       }
       info: pokemon_v2_pokemons {

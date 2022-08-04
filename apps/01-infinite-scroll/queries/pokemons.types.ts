@@ -22,9 +22,9 @@ type PokemonAbility = {
 export type Pokemon = {
   name: string;
   id: number;
-  habitAt: {
+  habitAts: {
     name: string;
-  };
+  } | null;
   info: [PokemonInfo];
 };
 

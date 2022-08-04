@@ -16,7 +16,7 @@ export const Main = ({ pokemons }: MainProps) => (
           <PokemonCard
             id={pokemon.id}
             name={pokemon.name}
-            habbitat={pokemon.habitAt.name}
+            habbitat={pokemon.habitAts?.name ?? null}
             image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`}
             type={info.types[0].type.name}
             hp={info.stats[0].base}

@@ -7,7 +7,6 @@ type FooterProps = {
 
 export const Footer = ({ callback }: FooterProps) => {
   const handleOnClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    console.log(event);
     callback();
   };
 

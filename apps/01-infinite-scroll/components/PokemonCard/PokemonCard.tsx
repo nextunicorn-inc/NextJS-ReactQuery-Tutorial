@@ -7,7 +7,7 @@ type PokemonCardProps = {
   name: string;
   image: string;
   type: string;
-  habbitat: string;
+  habbitat: string | null;
   hp: number;
   attack: number;
   defense: number;
@@ -38,7 +38,7 @@ export const PokemonCard = ({
       <Styled.PokemonImageName>
         <img src={image} />
         <p>
-          {name} - <span>{habbitat}</span>
+          {name} - {habbitat && <span>{habbitat}</span>}
         </p>
       </Styled.PokemonImageName>
       <Styled.Box>

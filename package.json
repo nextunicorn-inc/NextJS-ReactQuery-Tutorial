@@ -1,7 +1,7 @@
 {
   "name": "@nextjs-tutorial/workspace",
   "version": "1.0.0",
-  "packageManager": "yarn@3.2.0",
+  "packageManager": "yarn@3.2.2",
   "workspaces": [
     "apps/*"
   ],
@@ -33,7 +33,6 @@
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",
     "eslint": "^8.21.0",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^12.2.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",

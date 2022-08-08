@@ -22,7 +22,9 @@
     "@babel/generator": "^7.18.10",
     "@babel/runtime": "^7.18.9",
     "@babel/types": "^7.18.10",
+    "@tanstack/react-query": "^4.0.10",
     "cross-env": "^7.0.3",
+    "jotai": "^1.7.8",
     "nodemon": "^2.0.19"
   },
   "devDependencies": {

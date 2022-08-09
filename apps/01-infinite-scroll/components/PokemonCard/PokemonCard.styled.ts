@@ -128,3 +128,15 @@ export const Box = styled.div`
     }
   }
 `;
+
+export const LikeBox = styled.div`
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  
+  button {
+    width: 26px;
+    height: 26px;
+  }
+`

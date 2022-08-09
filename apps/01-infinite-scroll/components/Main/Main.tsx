@@ -1,6 +1,3 @@
-import { useRecoilValue } from 'recoil';
-import { LikePokemonCardListState } from '../../state/LikePokemonCard'
-
 import { Pokemons } from 'queries';
 
 import * as Styled from './Main.styled';
@@ -11,8 +8,6 @@ type MainProps = {
 };
 
 export const Main = ({ pokemons }: MainProps) => {
-  const value = useRecoilValue(LikePokemonCardListState);
-  console.log(value);
 
   return (
       <Styled.MainLayout>

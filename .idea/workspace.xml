@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b42fcff8-4e76-43e3-bedb-f3e10954d5c1" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header/Header.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header/Header.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/Main/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/01-infinite-scroll/state/LikePokemonCard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/01-infinite-scroll/state/LikePokemonCardList.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,7 @@
       <workItem from="1659588198996" duration="919000" />
       <workItem from="1659589132412" duration="7496000" />
       <workItem from="1659935444201" duration="23000" />
-      <workItem from="1660009630029" duration="9616000" />
+      <workItem from="1660009630029" duration="13051000" />
     </task>
     <servers />
   </component>
@@ -141,9 +139,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx</url>
-          <line>140</line>
+          <line>160</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/01-infinite-scroll/components/Header/Header.styled.ts</url>
+          <line>33</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/apps/01-infinite-scroll/components/PokemonCard/PokemonCard.tsx</url>
+          <line>79</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

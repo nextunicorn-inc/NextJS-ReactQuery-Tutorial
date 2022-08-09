@@ -1,9 +1,11 @@
-import {useRecoilState, useRecoilValue} from 'recoil';
-import { LikePokemonCardListState } from '../../state/LikePokemonCard'
+import { useRecoilState } from 'recoil';
+import { LikePokemonCardListState } from '../../state/LikePokemonCardList'
 
 import * as Styled from './PokemonCard.styled';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
+import { useRouter } from 'next/router'
+
 
 type PokemonCardProps = {
   id: number;
@@ -32,11 +34,16 @@ export const PokemonCard = ({
   special2,
   speed,
 }: PokemonCardProps) => {
+  const router = useRouter();
+  const isLikePage = router.pathname === '/like';
+
   const [likePokemonCardList, setLikePokemonCardList] = useRecoilState(
       LikePokemonCardListState,
   )
 
-  const handleAddPokemon = () => {
+  const handleAddPokemon = (id) => {
+    // 중복 추가 예외 로직 추가
+
     const newLikePokemonCardList = [
         ...likePokemonCardList,
       {
@@ -54,6 +61,11 @@ export const PokemonCard = ({
       }
     ]
 
+    setLikePokemonCardList(newLikePokemonCardList)
+  }
+
+  const handleRemovePokemon = (id) => {
+    const newLikePokemonCardList = likePokemonCardList.filter((pokemon) => pokemon.id !== id);
     setLikePokemonCardList(newLikePokemonCardList)
   }
 
@@ -127,9 +139,16 @@ export const PokemonCard = ({
             </div>
           </Styled.Box>
           <Styled.LikeBox>
-            <button
-              onClick={handleAddPokemon}
-            >➕</button>
+            {isLikePage ? (
+                <button
+                    onClick={() => handleRemovePokemon(id)}
+                >❌</button>
+            ) : (
+                <button
+                    onClick={() => handleAddPokemon(id)}
+                >➕</button>
+            )}
+
           </Styled.LikeBox>
         </Styled.PokemonCard>
       </Styled.PokemonCardContainer>

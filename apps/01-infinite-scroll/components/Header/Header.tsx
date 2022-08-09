@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { HeaderContainer } from './Header.styled';
-import Axios from 'axios';
+import React from 'react';
+import Link from 'next/link'
+import {HeaderContainer, HeaderMenu} from './Header.styled';
 
 export const Header = () => (
   <HeaderContainer>
@@ -10,22 +10,10 @@ export const Header = () => (
         alt="fonte-de-pokemon"
       />
     </a>
+    <Link href="/like">
+      <HeaderMenu>
+          ✔
+      </HeaderMenu>
+    </Link>
   </HeaderContainer>
 );
-
-// const [pokemonName, setPokemonName] = useState("");
-// const searchPokemon = () => {
-//     Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-//     .then((response) => {
-//         console.log(response)
-//     })
-// };
-
-// return(
-//     <div className={styles.headerContainer}>
-//         <h1>Pokédex</h1>
-//         <input type="text" onChange={(event) => {setPokemonName(event.target.value)}}/>
-//         <button onClick={searchPokemon}> Procurar </button>
-
-//     </div>
-// )

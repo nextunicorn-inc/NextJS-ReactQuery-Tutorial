@@ -15,8 +15,10 @@
     "backend": "yarn workspace @nextjs-tutorial/backend",
     "infinite": "yarn workspace @nextjs-tutorial/01-infinite-scroll",
     "follow": "yarn workspace @nextjs-tutorial/02-follow-sync",
+    "vac": "yarn workspace @nextjs-tutorial/03-vac-tutorial",
     "dev1": "yarn workspaces foreach -vpit --exclude \"{@nextjs-tutorial/workspace,@nextjs-tutorial/02-follow-sync}\" run dev",
-    "dev2": "yarn workspaces foreach -vpit --exclude \"{@nextjs-tutorial/workspace,@nextjs-tutorial/01-infinite-scroll}\" run dev"
+    "dev2": "yarn workspaces foreach -vpit --exclude \"{@nextjs-tutorial/workspace,@nextjs-tutorial/01-infinite-scroll}\" run dev",
+    "dev3": "yarn workspaces foreach -vpit --exclude \"{@nextjs-tutorial/workspace,@nextjs-tutorial/02-follow-sync}\" --exclude \"{@nextjs-tutorial/workspace,@nextjs-tutorial/01-infinite-scroll}\" run dev"
   },
   "dependencies": {
     "@babel/generator": "^7.18.10",

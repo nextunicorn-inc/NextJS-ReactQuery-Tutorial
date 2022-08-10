@@ -14,10 +14,24 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "paths": {
-      "infinite-scroll": ["./apps/01-infinite-scroll"],
-      "infinite-scroll/*": ["./apps/01-infinite-scroll/*"],
-      "follow-sync": ["./apps/02-follow-sync"],
-      "follow-sync/*": ["./apps/02-follow-sync/*"]
+      "infinite-scroll": [
+        "./apps/01-infinite-scroll"
+      ],
+      "infinite-scroll/*": [
+        "./apps/01-infinite-scroll/*"
+      ],
+      "follow-sync": [
+        "./apps/02-follow-sync"
+      ],
+      "follow-sync/*": [
+        "./apps/02-follow-sync/*"
+      ],
+      "vac-tutorial": [
+        "./apps/03-vac-tutorial"
+      ],
+      "vac-tutorial/*": [
+        "./apps/03-vac-tutorial/*"
+      ]
     }
   },
   "references": [
@@ -26,6 +40,9 @@
     },
     {
       "path": "apps/02-follow-sync"
+    },
+    {
+      "path": "apps/03-vac-tutorial"
     }
   ],
   "include": [],

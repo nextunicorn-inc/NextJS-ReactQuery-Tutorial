@@ -29,6 +29,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:apps/02-follow-sync"\
       },\
       {\
+        "name": "03-vac-pattern",\
+        "reference": "workspace:apps/03-vac-pattern"\
+      },\
+      {\
         "name": "@nextjs-tutorial/backend",\
         "reference": "workspace:apps/backend"\
       }\
@@ -36,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["03-vac-pattern", ["workspace:apps/03-vac-pattern"]],\
       ["@nextjs-tutorial/01-infinite-scroll", ["workspace:apps/01-infinite-scroll"]],\
       ["@nextjs-tutorial/02-follow-sync", ["workspace:apps/02-follow-sync"]],\
       ["@nextjs-tutorial/backend", ["workspace:apps/backend"]],\
@@ -76,6 +81,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.7.1"],\
             ["prettier-eslint", "npm:15.0.1"],\
             ["react", "npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["03-vac-pattern", [\
+        ["workspace:apps/03-vac-pattern", {\
+          "packageLocation": "./apps/03-vac-pattern/",\
+          "packageDependencies": [\
+            ["03-vac-pattern", "workspace:apps/03-vac-pattern"],\
+            ["@types/eslint", "npm:8.4.1"],\
+            ["@types/node", "npm:18.6.3"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/react-dom", "npm:18.0.6"],\
+            ["eslint", "npm:8.21.0"],\
+            ["eslint-config-next", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:12.2.3"],\
+            ["next", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:12.2.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:543166aa79746b385e2afa86d3cc26be0be19b46183948b3416004ae4e95da1d35cb3e850135bd784c6109e4ff3f91dee69f0290b6971c319bfe89e099ea63d1#npm:18.2.0"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=f456af"]\
           ],\
           "linkType": "SOFT"\

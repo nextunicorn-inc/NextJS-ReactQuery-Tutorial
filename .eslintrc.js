@@ -78,6 +78,16 @@ module.exports = {
         },
       },
     },
+    {
+      files: ['apps/03-vac-pattern/**/*.ts?(x)', 'apps/03-vac-pattern/**/*.js?(x)'],
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: path.resolve(`${__dirname}/apps/03-vac-pattern/tsconfig.json`),
+          },
+        },
+      },
+    },
   ],
   settings: {
     'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],

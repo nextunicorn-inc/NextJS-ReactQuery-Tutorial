@@ -45,25 +45,22 @@ const CountAndButtonsUI = ({
 );
 
 interface CountStepInputUIProps {
-  id: string;
   step: number;
   onChangeStepInput: (e: ChangeEvent<HTMLInputElement>) => void;
   onClickStepReset: () => void;
 }
-const CountStepInputUI = ({
-  id,
-  step,
-  onClickStepReset,
-  onChangeStepInput,
-}: CountStepInputUIProps) => (
-  <div style={{ display: 'flex', gap: 10 }}>
-    <label htmlFor={id}>스텝</label>
-    <input itemID={id} value={step} onChange={onChangeStepInput} />
-    <button type={'button'} onClick={onClickStepReset}>
-      스텝 초기화
-    </button>
-  </div>
-);
+const CountStepInputUI = ({ step, onClickStepReset, onChangeStepInput }: CountStepInputUIProps) => {
+  const id = useId();
+  return (
+    <div style={{ display: 'flex', gap: 10 }}>
+      <label htmlFor={id}>스텝</label>
+      <input itemID={id} value={step} onChange={onChangeStepInput} />
+      <button type={'button'} onClick={onClickStepReset}>
+        스텝 초기화
+      </button>
+    </div>
+  );
+};
 
 const calculateColor = (count: number) => {
   if (count === 0 || (count % 2 === 0 && count % 5 === 0)) {
@@ -82,7 +79,6 @@ const isShowCount = (count: number) => count === 0 || count % 2 !== 0 || count %
 const VacComplexCounterPage = () => {
   const [count, setCount] = useState(0);
   const [step, setStep] = useState(1);
-  const id = useId();
 
   const onChangeStepInput = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -104,7 +100,17 @@ const VacComplexCounterPage = () => {
   const countContent = isShowCount(count) ? count.toString() : '😂';
   const countContentStyle = { color: calculateColor(count) };
 
-  const counterStepInputProps = { id, step, onClickStepReset, onChangeStepInput };
+  const counterStepInputProps = { step, onClickStepReset, onChangeStepInput };
+
+  // 이렇게 꼭 객체를 만들어서 UI컴포넌트에 구조분해할당안해도 된다.
+  const CountAndButtonsUIProps = {
+    step,
+    onClickIncreaseAsStep,
+    onClickDecreaseAsStep,
+    countTitle,
+    countContentStyle,
+    countContent,
+  };
 
   return (
     <Layout>

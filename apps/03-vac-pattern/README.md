@@ -2,9 +2,9 @@
 
 ## VAC란?
 
- - View Asset Component의 약자로 렌더링에 필요한 jsx와 스타일을 관리하는 컴포넌트
- - container, presentational 패턴의 진화버전
- - ui로직과 view를 분리하는 방식
+ - `View Asset Component`의 약자로 렌더링에 필요한 jsx와 스타일을 관리하는 컴포넌트
+ - `container`, `presentational` 패턴의 진화버전
+ - `ui로직`과 `view`를 분리하는 방식
 
 ## VAC가 왜 좋은데?
 

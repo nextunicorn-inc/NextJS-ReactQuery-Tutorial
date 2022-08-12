@@ -31,15 +31,18 @@ const ComplexCounterPage = () => {
       >
         <div>
           <h1>카운터</h1>
+          <p>버튼 ui를 타원으로 만든다. (ui만 변경)</p>
+          <p>카운트는 0보다 작을 수 없다. (ui 로직만 변경)</p>
+          <br />
+          <p>둘 다 변경</p>
           <p>
             2의 배수는 <span style={{ color: 'red' }}>빨간색</span>
           </p>
           <p>
             5의 배수는 <span style={{ color: 'blue' }}>파란색</span>
           </p>
-          <p>2와 5의 공배수는 숫자 대신 😂 모양을 보여주기 </p>
+          <p>2와 5의 공배수는 숫자 대신 😂 모양을 보여주고 </p>
           <p>그 외는 흰색</p>
-          <p>카운트는 0보다 작을 수 없다.</p>
         </div>
         <div style={{ display: 'flex', gap: 10 }}>
           <label htmlFor={id}>스텝</label>
@@ -67,7 +70,19 @@ const ComplexCounterPage = () => {
             fontSize: '20px',
           }}
         >
-          <button type={'button'} onClick={() => setCount(p => p + step)}>
+          <button
+            type={'button'}
+            onClick={() => setCount(p => p + step)}
+            style={{
+              backgroundColor: 'gray',
+              width: 100,
+              height: 30,
+              borderRadius: 15,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
             <span>{step}만큼 증가</span>
           </button>
           <span>
@@ -77,6 +92,15 @@ const ComplexCounterPage = () => {
             </span>
           </span>
           <button
+            style={{
+              backgroundColor: 'gray',
+              width: 100,
+              height: 30,
+              borderRadius: 15,
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
             type={'button'}
             onClick={() => {
               if (count - step < 0) return;
